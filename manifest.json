@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Blackboard.com grades as percentages",
+  "version": "0.1.0",
+  "description": "Show grades in blackboard.com courses as percentages rather than fractions. Also shows all overall course grades on the class list page.",
+  "content_scripts": [{
+    "js": ["source.js"],
+    "matches": [
+      "https://*.blackboard.com/*/myGrades?course_id=*",
+      "https://*.blackboard.com/webapps/portal/execute/tabs/tabAction*"
+    ]
+  }]
+}
